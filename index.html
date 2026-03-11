@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MUMBAI HEAD OFFICE OFFICIAL</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f5f5;
+text-align:center;
+}
+
+.header{
+background:#fff2a6;
+padding:15px;
+font-size:24px;
+font-weight:bold;
+}
+
+.company{
+font-size:28px;
+font-weight:bold;
+margin:15px;
+}
+
+.live{
+background:#bff0a6;
+padding:10px;
+font-size:22px;
+font-weight:bold;
+}
+
+.resultbox{
+background:#5a0033;
+color:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+line-height:30px;
+font-size:20px;
+}
+
+.charge{
+font-size:24px;
+margin-top:15px;
+}
+
+.phone{
+font-size:24px;
+color:yellow;
+margin-top:10px;
+}
+
+.btn{
+display:inline-block;
+background:#ffb86b;
+padding:12px 25px;
+margin:10px;
+border-radius:10px;
+font-size:18px;
+text-decoration:none;
+color:black;
+}
+
+.qr{
+background:white;
+margin:20px;
+padding:20px;
+border-radius:10px;
+}
+
+.qr img{
+width:250px;
+}
+
+.proof{
+margin:20px;
+}
+
+.proof img{
+width:90%;
+max-width:400px;
+margin-top:20px;
+border-radius:10px;
+}
+
+.footer{
+background:#4b2e83;
+color:white;
+padding:20px;
+font-size:16px;
+margin-top:30px;
+}
+
+/* Fake Payment Popup */
+#paymentPopup{
+position:fixed;
+top:-100px;
+left:50%;
+transform:translateX(-50%);
+background:#00c853;
+color:white;
+padding:12px 20px;
+border-radius:10px;
+font-size:16px;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:0.6s;
+z-index:9999;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">
+!! विश्व की पहली मटका वेबसाइट !!<br>
+Since-2009
+</div>
+
+<div class="company">
+MUMBAI HEAD OFFICE OFFICIAL
+</div>
+
+<div class="live">
+📡 LIVE RESULT 📡
+</div>
+
+<div class="resultbox">
+
+SRIDEVI & TIME BAZAR & MILAN DAY<br>
+RAJDHANI DAY & KALYAN<br><br>
+SRIDEVI NIGHT & MILAN NIGHT<br>
+RAJDHANI NIGHT & KALYAN NIGHT<br>
+MAIN BAZAR<br><br>
+SINGLE JODI & SINGLE PANAL
+
+<div class="charge">
+ADVANCE CHARGE 2999/-
+</div>
+
+<div class="phone">
++91-8839100416
+</div>
+
+<a class="btn" href="tel:+918839100416">CALL NOW</a>
+<a class="btn" href="https://wa.me/918839100416">WHATSAPP</a>
+
+</div>
+
+<div class="qr">
+
+<h2>SCAN & PAY</h2>
+
+<img src="https://i.postimg.cc/fWXqG1C3/IMG-20260307-WA0000.jpg">
+
+<p style="font-size:18px;margin-top:15px;">
+इस पर पेमेंट डाल कर व्हाट्सएप पर स्क्रीनशॉट डालें <br>
+गेम व्हाट्सएप पर तुरंत मिल जाएगा
+</p>
+
+<a href="https://wa.me/918839100416" 
+style="display:inline-block;
+background:#25D366;
+color:white;
+padding:12px 25px;
+border-radius:10px;
+font-size:18px;
+text-decoration:none;
+margin-top:10px;">
+📲 WHATSAPP SCREENSHOT
+</a>
+
+</div>
+
+<!-- Auto Proof Section -->
+<div class="proof">
+<h2>📷 PASSING PROOF</h2>
+<div id="proofContainer"></div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+<h3>-:DISCLAIMER:-</h3>
+<p>
+This website (sattamatka.work) is intended solely for entertainment and informational purposes. 
+We are not associated with any illegal betting matka/gambling activities. 
+The results and information presented here are based on data available on the internet and general calculations. 
+We do not endorse gambling or betting. Please adhere to the laws of your state/country. 
+Users will be solely responsible for any profits, losses, or legal issues that may arise. 
+Note: This website is for informational and educational purposes only. Use at your own risk.
+</p>
+<br>
+<b>Powerd By sattamatka.work</b>
+<br><br>
+2011 - 2026 sattamatka.work
+</div>
+
+<!-- Auto Proof Script -->
+<script>
+let proofs = [
+{date:"11-03-2026",img:"https://i.postimg.cc/yxrjzXDg/Picsart-26-03-11-17-25-02-807.jpg"},
+{date:"10-03-2026",img:"https://i.postimg.cc/cLz44Ys1/Picsart-26-03-10-19-50-54-775.jpg"},
+{date:"09-03-2026",img:"https://i.ibb.co/jvy7GvZG/Picsart-26-03-09.jpg"},
+{date:"08-03-2026",img:"https://i.postimg.cc/59PcVJ43/Picsart-26-03-09-17-14-06-126.jpg"},
+{date:"07-03-2026",img:"https://i.postimg.cc/BnTMJ55K/Picsart-26-03-09-11-11-08-195.jpg"}
+];
+
+let container=document.getElementById("proofContainer");
+proofs.slice(0,6).forEach(p=>{
+container.innerHTML+=`
+<h3>${p.date}</h3>
+<img src="${p.img}" style="width:90%;max-width:400px;margin-top:10px;border-radius:10px">
+`;
+});
+</script>
+
+<!-- Fake Payment Popup Script -->
+<div id="paymentPopup"></div>
+<script>
+let names = ["Rahul","Aman","Vikas","Rohit","Sandeep","Arjun","Pankaj","Deepak","Karan","Ankit"];
+let cities = ["Delhi","Mumbai","Surat","Jaipur","Indore","Lucknow","Nagpur","Patna","Bhopal","Pune"];
+
+function randomItem(arr){return arr[Math.floor(Math.random()*arr.length)];}
+
+function showPayment(){
+    let name = randomItem(names);
+    let city = randomItem(cities);
+
+    let popup = document.getElementById("paymentPopup");
+    popup.innerHTML = "💰 "+name+" from "+city+" just paid ₹2999";
+
+    popup.style.top="20px";
+    setTimeout(()=>{popup.style.top="-100px";},4000);
+}
+
+showPayment();
+setInterval(showPayment,30000);
+</script>
+
+</body>
+</html>
